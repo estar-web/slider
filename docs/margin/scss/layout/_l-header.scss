@@ -1,0 +1,28 @@
+@use "../global/" as *;
+
+.l-header{
+  background: map-get($color, main);
+  width: 100%;
+  //ヘッダーをトップに固定
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: map-get($z-map , header);
+  padding: 30px 0;
+  height: $header-height;
+  text-align: center;
+
+  @include mq(sp){
+    height: $header-height-sp;
+  }
+}
+
+.l-header__title{
+  font-size: 1.5rem;
+  color: #fff;
+
+  @include mq(sp){
+    font-size: 0.75rem;
+  }
+}

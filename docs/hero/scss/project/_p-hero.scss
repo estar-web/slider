@@ -1,0 +1,62 @@
+@use "../global/" as *;
+
+.p-hero {
+  background: transparent url(../img/mv.JPG) no-repeat center center / cover;
+  height: calc(100vh - #{$header-height});
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  @include mq('sp') {
+    height: 668px;
+  }
+
+}
+
+.p-hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+
+  @include mq('l') {
+    padding-left: $padding-tab;
+    padding-right: $padding-tab;
+  }
+
+  @include mq('sp') {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+}
+
+.p-hero__ttl {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: lh(48, 32);
+
+  @include mq(l) {
+    @include font(56);
+  }
+
+  @include mq(sp) {
+    @include font(36);
+    line-height: lh(40, 24);
+  }
+}
+
+.p-hero__txt {
+  @include font(24);
+  font-weight: 700;
+
+  @include mq(l) {
+    @include font(30);
+  }
+
+  @include mq(sp) {
+    @include font(20);
+  }
+}

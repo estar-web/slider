@@ -1,0 +1,16 @@
+@use "../global/" as *;
+
+body{
+  font-family: $mainFont;
+  color: map-get($color, textColor);
+  padding-top: $header-height;
+
+  @include mq(sp){
+    padding-top: $header-height-sp;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}

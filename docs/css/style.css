@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.parts-title {
+  background: #33C0FF;
+  color: #fff;
+  padding: 1em 0;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.parts-link {
+  color: #337ab7;
+  display: block;
+}
+
+.mt{
+  margin-top: 20px;
+}

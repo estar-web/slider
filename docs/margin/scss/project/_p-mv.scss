@@ -1,0 +1,55 @@
+@use "../global/" as *;
+
+.p-mv {
+  background: transparent url(../img/mv.JPG) no-repeat center center / cover;
+  border-radius: 12px;
+  height: 340px;
+  margin: 120px auto 0;
+  max-width: 1920px;
+  overflow: hidden;
+  position: relative;
+  width: 90.625%;
+  
+
+  @include mq('sp') {
+    background-image: url(../img/mv.JPG);
+    height: 188px;
+    margin-top: 80px;
+  }
+
+}
+
+.p-mv__content {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: map-get($z-map , base) + 1;
+
+  @include mq('l') {
+    padding-left: $padding-tab;
+    padding-right: $padding-tab;
+  }
+
+  @include mq('sp') {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+}
+
+.p-mv__ttl {
+  font-size: 2rem;
+  font-weight: bold;
+
+  @include mq(sp) {
+    @include font(24);
+  }
+}
+
+.p-mv__txt {
+  @include font(14);
+  font-weight: 700;
+  text-transform: uppercase;
+}
