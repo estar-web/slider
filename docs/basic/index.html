@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="基本のスライダー">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基本のスライダー</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header id="js-header" class="l-header">
+    <h1 class="l-header__title">基本のスライダー</h1>
+  </header><!-- /.l-header -->
+  <div id="js-mv" class="p-mv">
+    <div class="swiper p-mv-swiper">
+      <div class="swiper-wrapper p-mv-swiper__wrapper">
+        <div class="swiper-slide p-swiper-slide">
+          <picture>
+            <source media="(min-width: 768)" srcset="./assets/img/picture_swiper1.jpg">
+            <img src="./assets/img/picture_swiper1.jpg" width="1594" height="1200" alt="スライダー画像1" loading="lazy" decoding="async">
+          </picture>
+          <div class="p-mv__text">
+            <h2 class="p-mv__ttl">基本のスライダー</h2>
+            <p class="p-mv__txt">スライダー1枚目</p>
+          </div>
+        </div>
+        <div class="swiper-slide p-swiper-slide">
+          <picture>
+            <source media="(min-width: 768)" srcset="./assets/img/picture_swiper2.jpg">
+            <img src="./assets/img/picture_swiper2.jpg" width="1594" height="1200" alt="スライダー画像2" loading="lazy" decoding="async">
+          </picture>
+          <div class="p-mv__text">
+            <h2 class="p-mv__ttl">基本のスライダー</h2>
+            <p class="p-mv__txt">スライダー2枚目</p>
+          </div>
+        </div>
+        <div class="swiper-slide p-swiper-slide">
+          <picture>
+            <source media="(min-width: 768)" srcset="./assets/img/picture_swiper3.jpg">
+            <img src="./assets/img/picture_swiper3.jpg" width="1594" height="1200" alt="スライダー画像3" loading="lazy" decoding="async">
+          </picture>
+          <div class="p-mv__text">
+            <h2 class="p-mv__ttl">基本のスライダー</h2>
+            <p class="p-mv__txt">スライダー3枚目</p>
+          </div>
+        </div>
+        <div class="swiper-slide p-swiper-slide">
+          <picture>
+            <source media="(min-width: 768)" srcset="./assets/img/picture_swiper4.jpg">
+            <img src="./assets/img/picture_swiper4.jpg" width="1594" height="1200" alt="スライダー画像4" loading="lazy" decoding="async">
+          </picture>
+          <div class="p-mv__text">
+            <h2 class="p-mv__ttl">基本のスライダー</h2>
+            <p class="p-mv__txt">スライダー4枚目</p>
+          </div>
+        </div>
+        <div class="swiper-slide p-swiper-slide">
+          <picture>
+            <source media="(min-width: 768)" srcset="./assets/img/picture_swiper5.jpg">
+            <img src="./assets/img/picture_swiper5.jpg" width="1594" height="1200" alt="スライダー画像5" loading="lazy" decoding="async">
+          </picture>
+          <div class="p-mv__text">
+            <h2 class="p-mv__ttl">基本のスライダー</h2>
+            <p class="p-mv__txt">スライダー5枚目</p>
+          </div>
+        </div>
+      </div>
+      <!-- ページネーション -->
+      <div class="swiper-pagination p-mv-swiper__pagination"></div>
+      <!-- 前後の矢印 -->
+      <div class="swiper-button-prev p-mv-swiper__button--prev"></div>
+      <div class="swiper-button-next p-mv-swiper__button--next"></div>
+      <!-- スクロールバー -->
+      <div class="swiper-scrollbar p-mv-swiper__scrollbar"></div>
+    </div>
+  </div><!-- /.p-mv -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>

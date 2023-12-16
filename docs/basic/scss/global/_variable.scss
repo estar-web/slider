@@ -1,0 +1,47 @@
+@use "sass:map";
+
+// color
+$color: (
+  main: #33C0FF,
+  accent: #FF739E,
+  textColor: #337ab7,
+  textColor-2dn: #333,
+);
+
+// size
+$m-inner: 1200px;
+$header-height: 120px;
+$header-height-sp: 80px;
+
+// padding
+$padding: 60px;
+$padding-tab:30px;
+$padding-sp:20px;
+
+// font-family
+$mainFont:  'Noto Sans JP', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+// breakpoint
+$breakpoints : (
+  "xl":"screen and (max-width:1600px)",
+  "l":"screen and (max-width:1280px)",
+  "m":"screen and (max-width:1080px)",
+  "hov": "screen and (min-width: 768px)",
+  "s":"screen and (max-width:767px)",
+  "xs":"screen and (max-width:499px)",
+);
+
+// transition time
+$ts-time: 0.3s;
+
+// z-index
+$z-map : (
+  modal: 100, // モダール
+	drawer: 40, // ドロワー
+	floating: 30, // フローティングアイテム
+  header: 20,
+  sidebar: 10,
+	footer: 10, // フッター
+  base: 1,
+  under: -1,
+);

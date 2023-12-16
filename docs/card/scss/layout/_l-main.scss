@@ -1,0 +1,8 @@
+@use "../global/" as *;
+@use "sass:math";
+@use "sass:map";
+
+.l-inner{
+  width: min(100%,$m-inner);
+  margin-inline: auto;
+}
