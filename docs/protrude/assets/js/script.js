@@ -22,16 +22,22 @@ checkBreakPoint();
 
 //スライダー
 var mySwiper = new Swiper('.p-mv-swiper', {
-  loop: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
-  }
+  },
+
+  // スマホ表示のオプション
+  spaceBetween: 20,
+  width: 275,
+
+  breakpoints: {
+    // PC表示のオプション
+    767: {
+      spaceBetween: 40,
+
+      width: 400,
+    }
+  },
 });

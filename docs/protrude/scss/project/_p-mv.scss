@@ -2,7 +2,19 @@
 @use "sass:math";
 
 .p-mv {
-  height: 600px;
+  max-width: 1240px;
+	background: #eee;
+	margin-right: 0;
+	margin-left: 40px;
+	padding: 55px 0 59px 60px;
+	overflow: hidden;
+
+	@include mq(s) {
+		margin-left: 0;
+		padding-top: 36px;
+		padding-left: 1px;
+		padding-bottom: 41px;
+	}
 }
 
 .p-mv__text {

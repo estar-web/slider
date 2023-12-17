@@ -1,4 +1,6 @@
 @use "../global/" as *;
+@use "sass:math";
+@use "sass:map";
 
 .p-mv-swiper {
   height: inherit;
@@ -11,7 +13,7 @@
 .p-swiper-slide {
 
 	position: relative;
-	height: 600px;
+	// height: 600px;
 	width: 100%;
 
   picture{
@@ -35,12 +37,46 @@
 	}
 }
 
+.p-swiper-slide__body {
+  padding: 1em 1em 1.25em 1em;
+
+	@include mq(s) {
+		padding: 0.625em 1em 0.625em 0.75em;
+	}
+}
+
+.p-swiper-slide__item-title {
+  font-size: 1.25rem;
+	line-height: math.div(24 , 20);
+	font-weight: 700;
+
+	@include mq(s) {
+		font-size: 0.875rem;
+		line-height: math.div(16, 14);
+	}
+}
+
+.p-swiper-slide__content {
+  font-size: 1rem;
+	line-height: math.div(24 , 16);
+	margin-top: 9px;
+
+	@include mq(s) {
+		font-size: 0.75rem;
+		letter-spacing: 0.001em;
+	}
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  top: 345px;
+}
+
 .swiper-pagination {
 
 }
 
 .p-mv-swiper__pagination {
-
+  // margin-top: 10px;
 }
 
 .p-mv-swiper__button--prev {
