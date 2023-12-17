@@ -22,16 +22,31 @@ checkBreakPoint();
 
 //スライダー
 var mySwiper = new Swiper('.p-mv-swiper', {
-  loop: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  loop: true, // ループ有効
+  speed: 6000, // ループの時間
+  slidesPerView: 1,
+  spaceBetween: 20,
+  allowTouchMove: false, // スワイプ無効
+  autoplay: {
+    delay: 0, // 途切れなくループ
   },
 
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
+  breakpoints: {
+    // スライドの表示枚数：768px以上の場合
+    768: {
+      slidesPerView: 3,
+    }
   }
+
+
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'bullets',
+  //   clickable: true,
+  // }
 });

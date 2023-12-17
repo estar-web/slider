@@ -416,6 +416,10 @@ a {
 	height: inherit;
 }
 
+.p-mv-swiper__wrapper {
+	transition-timing-function: linear;
+}
+
 .p-swiper-slide {
 	height: 600px;
 	position: relative;

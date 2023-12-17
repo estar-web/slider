@@ -1,0 +1,26 @@
+@use "../global/" as *;
+@use "sass:math";
+
+.p-mv {
+  height: 600px;
+}
+
+.p-mv__text {
+  position: absolute;
+  inset-block: 0;
+  margin-block: auto;
+  width: inherit;
+  height: fit-content;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+
+.p-mv__ttl {
+  @include font(26);
+  font-weight: 700;
+}
+
+.p-mv__txt {}
