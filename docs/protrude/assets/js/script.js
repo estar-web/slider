@@ -36,7 +36,6 @@ var mySwiper = new Swiper('.p-mv-swiper', {
     // PC表示のオプション
     767: {
       spaceBetween: 40,
-
       width: 400,
     }
   },
